@@ -53,7 +53,7 @@ python -m venv .venv
 工具合同记录兼容的 22 个客户业务工具、3 个文档工具和必要能力。更新 Skill 或 MCP 接口后，可显式连接 MCP 验证合同：
 
 ```powershell
-.\.venv\Scripts\python.exe scripts/check_mcp.py --command D:/pythonProjects/link-mcp/.venv/Scripts/python.exe -- D:/pythonProjects/link-mcp/server.py
+.\.venv\Scripts\python.exe scripts/check_mcp.py --command ./link-mcp/.venv/Scripts/python.exe -- .//link-mcp/server.py
 ```
 
 将示例路径改成实际 MCP 安装位置。检查只发现工具、读取连接状态和接口说明，不发送业务请求；会话中不需要提供真实凭证。这个检查不等于真实客户业务或目标 AI 客户端验收。
