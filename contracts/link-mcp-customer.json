@@ -1,0 +1,49 @@
+{
+  "contract_version": 1,
+  "provider": "link-mcp",
+  "provider_repository": "https://github.com/xiaolushanling/link-mcp",
+  "minimum_provider_version": "0.2.0",
+  "profile": "customer",
+  "source_url": "https://demo.linkl.com.cn/doc/index.html",
+  "snapshot_date": "2026-11-11",
+  "business_tools": [
+    "link_basicdata_city_post_code_search",
+    "link_basicdata_validate_address",
+    "link_basicdata_validate_remote",
+    "link_finance_balance",
+    "link_finance_fetch_available_products",
+    "link_finance_query_price",
+    "link_lms_delete_order",
+    "link_lms_express_order",
+    "link_lms_order_detail",
+    "link_lms_print",
+    "link_lms_query_tracks",
+    "link_lms_special_line_order",
+    "link_lms_upload_file",
+    "link_lms_upload_no",
+    "link_pds_cal_price",
+    "link_pds_cancel",
+    "link_pds_order",
+    "link_pds_order_by_cal_price",
+    "link_pds_order_detail",
+    "link_pds_print",
+    "link_user_get_owms_warehouse",
+    "link_user_get_receive_warehouse"
+  ],
+  "helper_tools": [
+    "link_describe_api",
+    "link_list_services",
+    "link_search_apis"
+  ],
+  "describe_api_sections": [
+    "summary",
+    "input"
+  ],
+  "excluded_tools": [
+    "link_user_oauth_login",
+    "link_lms_push_post",
+    "link_edge_push_post",
+    "link_lms_dws_upload_file",
+    "link_lms_dws_upload_data_post"
+  ]
+}

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "link-skill"
+version = "0.2.0"
+description = "面向链路物流客户的 AI 业务 Skill 与平台适配材料"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.14,<1", "pyyaml>=6,<7", "build>=1,<2"]
+mcp = ["mcp>=2.3,<3"]
+
+[project.urls]
+Repository = "https://github.com/xiaolushanling/link-skill"
+Documentation = "https://github.com/xiaolushanling/link-skill#readme"
+
+[tool.setuptools]
+packages = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
